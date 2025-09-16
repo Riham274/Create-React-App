@@ -1,7 +1,7 @@
 
 function Greeting() {
     return(
-        <h2>Hello world</h2>
+        <h2></h2>
 
     );
 }
