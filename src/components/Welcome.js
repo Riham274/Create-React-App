@@ -16,6 +16,7 @@ class Welcome extends React.Component{
           <h1>hello, {this.props.name}</h1>
           <p>age: {this.props.age}</p>
           <p>title: {this.props.title}</p>
+
           <button onClick={() => {
             this.setState({
               lname: "soso"
@@ -24,6 +25,7 @@ class Welcome extends React.Component{
           }>
             change my name
           </button>
+          
           <h6>Created by, {this.state.fname} {this.state.lname}</h6>
         </>
         );
