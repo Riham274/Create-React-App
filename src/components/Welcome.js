@@ -6,6 +6,13 @@ class Welcome extends React.Component{
     lname: "ahmad" 
   }
 
+  changeName = () => {
+    console.log(this)
+    this.setState({
+      lname : "suha"
+    })
+  }
+
     render(){
       console.log("render phase")
       console.log(this.state);
@@ -25,7 +32,7 @@ class Welcome extends React.Component{
           }>
             change my name
           </button>
-          
+
           <h6>Created by, {this.state.fname} {this.state.lname}</h6>
         </>
         );
