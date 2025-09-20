@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import Welcome from './components/Welcome';
 import Guset from './components/Guset';
+import List from './components/List';
 
 function App(){
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,6 +23,7 @@ function App(){
 
       {isLoggedIn ? <Welcome name="ahmad" /> : <Guset/> }
       {element}
+      <List/>
     </div>
   );
 }
